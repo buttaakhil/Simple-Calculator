@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    
+}
+body{
+    height:100vh ;
+    background-color: black;
+}
+
+
+.outer{
+    height: 540px;
+    width: 320px;
+    padding: 15px;
+    background-image:url("background.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px auto;
+    border-radius: 20px;
+    
+}
+
+h1{
+    font-size: 56px;
+    font-family: 'Protest Revolution', sans-serif;
+    padding:  8px;
+    display: inline;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px white;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+h1:hover{
+    transform: scale(1.1);
+    border: none;
+    box-shadow: none;
+}
+
+.header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.first-out-div,.second-out-div,.third-out-div,.fourth-out-div,.fifth-out-div,.sixth-out-div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.inner-elements{
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Protest Revolution', sans-serif;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.602);
+    border-radius: 10px;
+    box-shadow:0px 0px 5px black;
+}
+
+.operator{
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+}
+
+.cal-input{
+    height: 65px;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.602);
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.operator:hover{
+    background-color: rgba(255, 0, 0, 0.502);
+    transform: scale(1.1);
+    box-shadow:0px 0px 5px red;
+}
+
+.controls{
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+}
+
+.controls:hover{
+    background-color: black;
+    transform: scale(1.1);
+    box-shadow:0px 0px 5px black;
+}
+
+.operand{
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+}
+
+.operand:hover{
+    background-color: rgba(0, 128, 0, 0.61);
+    transform: scale(1.1);
+    box-shadow:0px 0px 5px rgb(0, 128, 0);
+}
+
+@media(max-width:454px){
+    h1{
+        font-size: 40px;
+    }
+
+    .outer{
+        padding-top:0px ;
+        height: 480px;
+        width: 250px;
+        justify-content: space-evenly;
+    }
+    .inner-elements{
+        height: 45px;
+        width: 45px;
+        font-size: 20px;
+    }
+    .cal-input{
+        height: 40px;
+    }
+}
+
+@media(max-width:336px){
+    h1{
+        font-size: 32px;
+    }
+    .outer{
+        height: 420px;
+        width: 220px;
+    }
+}
