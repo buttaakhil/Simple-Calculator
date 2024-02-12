@@ -7,6 +7,8 @@
 body{
     height:100vh ;
     background-color: black;
+    background-image: url("background1.jpg");
+    background-size: cover;
 }
 
 
@@ -14,7 +16,8 @@ body{
     height: 540px;
     width: 320px;
     padding: 15px;
-    background-image:url("background.png");
+    background: transparent;
+    backdrop-filter: blur(30px);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -22,6 +25,7 @@ body{
     align-items: center;
     margin:10px auto;
     border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
     
 }
 
@@ -31,10 +35,11 @@ h1{
     padding:  8px;
     display: inline;
     border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 0px 10px white;
+    border: 2px solid black;
+    box-shadow: 0px 0px 20px black;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
+    color: black;
 }
 
 h1:hover{
@@ -66,9 +71,10 @@ h1:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.602);
+    background-color:black;
     border-radius: 10px;
-    box-shadow:0px 0px 5px black;
+    outline: none;
+    border: none;
 }
 
 .operator{
@@ -81,7 +87,7 @@ h1:hover{
     width: 100%;
     border-radius: 20px;
     outline: none;
-    background-color: rgba(0, 0, 0, 0.602);
+    background-color:black;
     border-radius: 10px;
     border: 2px solid black;
     font-size: 24px;
@@ -90,7 +96,7 @@ h1:hover{
 }
 
 .operator:hover{
-    background-color: rgba(255, 0, 0, 0.502);
+    background-color: rgba(255, 0, 0, 0.825);
     transform: scale(1.1);
     box-shadow:0px 0px 5px red;
 }
@@ -101,7 +107,7 @@ h1:hover{
 }
 
 .controls:hover{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.501);
     transform: scale(1.1);
     box-shadow:0px 0px 5px black;
 }
@@ -112,7 +118,7 @@ h1:hover{
 }
 
 .operand:hover{
-    background-color: rgba(0, 128, 0, 0.61);
+    background-color: rgba(0, 128, 0, 0.825);
     transform: scale(1.1);
     box-shadow:0px 0px 5px rgb(0, 128, 0);
 }
