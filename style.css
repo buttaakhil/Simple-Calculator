@@ -79,7 +79,7 @@ h1:hover{
 
 .operator{
     transition-timing-function: ease-in;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
 .cal-input{
@@ -103,7 +103,7 @@ h1:hover{
 
 .controls{
     transition-timing-function: ease-in;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
 .controls:hover{
@@ -114,7 +114,7 @@ h1:hover{
 
 .operand{
     transition-timing-function: ease-in;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
 .operand:hover{
